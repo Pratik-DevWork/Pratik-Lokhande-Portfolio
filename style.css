@@ -1,0 +1,196 @@
+
+    /* 🔷 Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+ body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://i.pinimg.com/736x/36/0d/3b/360d3bf13d07dda530b3136362ee9d78.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+      padding-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* 🔷 Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+
+
+    /* 🔷 Content Box */
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px 40px;
+      border-radius: 15px;
+      max-width: 700px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: rgb(153, 195, 231);
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 8px 0;
+    }
+
+    hr {
+      border: 1px solid #00bcd4;
+      margin: 10px 0;
+    }
+
+    .highlight-text {
+      font-size: 22px;
+      color: #00d9ff;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #0097a7;
+    }
+
+    /* 🔷 Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .highlight-text {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    
+ /* CSS for Bottom Navbar */
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+
+  .bottom-navbar a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .bottom-navbar a:hover {
+    color: #00ffcc;
+  }
+
+  .highlight-text {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: #00ccaa;
+  }
+
+
